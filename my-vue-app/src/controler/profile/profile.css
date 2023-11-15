@@ -1,0 +1,123 @@
+:root {
+    --bg1: #9b59b6;
+    --bg2: #3498db;
+    --bg3: #D7E1EC;
+}
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+
+/* .sumAll {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg1), var(--bg2));
+} */
+
+.sumAll {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(var(--bg1), var(--bg2));
+    overflow: hidden;
+    position: relative;
+}
+
+.sumAll:hover {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(var(--bg1), var(--bg2));
+    transition: 0.5s;
+}
+
+.sumAll img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sumAll img:active {
+    width: 350px;
+    height: 450px;
+    margin: 0;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.sumAll h2 {
+    color: #ffffff;
+}
+
+.sumAll p {
+    color: #ffffff;
+    margin: 0 30px 12px;
+}
+
+.bnt-sumAll {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 12px;
+}
+
+.bnt-sumAll button {
+    height: 35px;
+    width: 150px;
+    border: none;
+    margin-right: 12px;
+    border-radius: 5px;
+    color: #333333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bnt-sumAll button:hover {
+    transform: scale(0.95);
+}
+
+.icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-60px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    top: 12px;
+}
+
+.sumAll:hover .icon {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.icon i {
+    padding: 12px;
+    color: var(--bg1);
+    background: #fff;
+    border-radius: 50%;
+    margin: 5px 0 0 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon i:hover {
+    transform: scale(0.95);
+}
