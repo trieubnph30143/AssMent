@@ -21,7 +21,7 @@ export default function Header() {
   }
 
   return (
-    <div>
+    <div className="container" style={{ width: "1300px" }}>
       <nav className='navbar navbar-expand-lg bg-body-tertiary'>
         <div className='container-fluid'>
           <Link to={"/"}>
@@ -41,7 +41,7 @@ export default function Header() {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
               {check ? (
-                <li className='nav-item'>
+                <li className='nav-item' style={{cursor:"pointer"}}>
                   <p onClick={handleLogout} className='navbar-brand'>
                     Logout
                   </p>

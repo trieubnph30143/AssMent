@@ -25,7 +25,7 @@ let initProduct: Product[] = [
 export default function Home() {
   const [data, setData] = useState<Product[]>(initProduct);
   async function getProduct() {
-    let res = await fetch("https://fakestoreapi.com/products?limit=8");
+    let res = await fetch("https://fakestoreapi.com/products?limit=12");
     let products = await res.json();
     setData(products);
   }
@@ -33,11 +33,13 @@ export default function Home() {
     getProduct();
   }, []);
 
+
+
   return (
     <div>
       <Header />
 
-      <div className='container' style={{ width: "1200px" }}>
+      <div className='container' style={{ width: "1300px" }}>
         <h3>Danh sách sản phẩm</h3>
         <div className='row'>
           {data &&
@@ -69,7 +71,7 @@ export default function Home() {
                       </Link>
 
                       <p style={{ color: "red" }} className='card-text'>
-                        {item.price}$
+                        {item.price}$z
                       </p>
                     </div>
                   </div>

@@ -2,7 +2,7 @@ import "./footer.css"
 
 function Footer() {
   return (
-    <div className="hugAll">
+    <div className="hugAll container" style={{ width: "1300px" }}>
     <footer className="footer">
     <div className="footerAll">
       <div className="row">
